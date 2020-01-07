@@ -1,0 +1,1 @@
+<p class='thanks'>Thank you for your question.</p>
