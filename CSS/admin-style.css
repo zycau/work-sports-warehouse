@@ -1,0 +1,360 @@
+html{
+  font-size: 62.5%;
+}
+body{
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;  
+  background: #fff;
+  color:black;
+  min-height: 100vh;
+}
+html *{
+  box-sizing: border-box;
+}
+p{
+  margin:0;
+}
+h1, h2, h3, ul{
+  margin:0;
+  padding:0;
+}
+#wrap{
+  overflow: hidden;
+  max-width: 1000px;
+  margin:auto;
+}
+/* 顶部menu部分 */
+header{
+  position: relative;
+}
+#header-top{
+  background: #00aced;
+  color:#fff;  
+  font-size: 1.4em;
+  margin-bottom:15px; 
+}
+#header-top>*:first-child{
+  max-width: 1000px;
+  min-height: 40px;
+  margin:auto;
+  padding:0 5px 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;  
+}
+#header-top p, #header-top a{
+  font-size: 1.2em;  
+}
+#header-top a{
+  margin-right: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+#menu-icon{
+  line-height:40px;
+}
+
+
+/* Logo和搜索框部分 */
+#header-mid{
+  max-width: 1000px;
+  text-align: center;
+  margin:auto;
+  margin-bottom: 15px;
+}
+#header-mid>*:first-child{
+  margin-bottom: 15px;  
+}
+
+/* Categories部分 */
+#header-btm{
+  background: #012935;
+  max-width: 980px;
+  min-height: 60px; 
+  margin:0 auto 25px; 
+  padding-top: 10px
+}
+#header-btm ul{
+  display: flex;
+  width:310px; /* 需要动态调整   */
+  margin:auto;
+  list-style: none;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+#header-btm li{ 
+  width: 145px;
+  height: 40px;
+  margin:0 5px 10px 5px;  
+  border: 1px solid #00ACEC;
+  border-radius: 5px; 
+  line-height: 38px;
+  text-align: left;
+  padding: 0 10px;
+}
+#header-btm li:hover{
+  background: #00ACEC;  
+}
+#header-btm li:hover a:after{
+  color:#fff;
+}
+#header-btm a{  
+  width:100%;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.6em;
+  display:flex;
+  justify-content: space-between;
+}
+#header-btm a:after{
+  content: '>';
+  color: #00ACEC;
+}
+#header-btm span{
+  display:inline-block;
+}
+
+/* 中间部分 */
+/* #authen-user{
+  max-width: 1000px;
+  margin:auto;
+  padding: 0 10px;
+} */
+#authen-user h2{
+  padding: 0 20px;
+  line-height: 25px;
+  margin-bottom: 10px;
+  font-size:1.6em;
+}
+.panel{
+  max-width: 1000px;
+  margin:auto;
+  padding: 0 10px;
+  font-size: 1.5em;
+}
+.panel *{
+  margin-bottom: 10px;
+}
+.panel fieldset{
+  padding:10px;
+  margin-bottom: 15px;
+}
+.panel legend{
+  padding:10px;
+}
+.panel fieldset>p{
+  margin-bottom:10px;
+}
+.panel a{
+  display:inline-block;
+  padding: 5px;
+  margin-bottom: 10px;
+  min-width: 80px;
+  min-height: 25px;
+  text-align: center;
+  color: #012935;
+  text-decoration: none;
+  border: 1px solid #012935;
+  border-radius: 3px;
+}
+.panel [type=submit]{
+  background: #012935;
+  color: #fff;
+  min-width: 100px;
+  min-height: 30px;
+  border: none;
+  border-radius: 5px;
+}
+
+.panel table{
+  text-align: center;
+  border-collapse: collapse;
+  margin-bottom: 15px;
+}
+.panel table>*{
+  border-bottom: 1.5px solid #012935;
+}
+.panel table tr{
+  height:30px;
+}
+.panel td a{
+  border:none;
+  display:inline;
+  line-height: 25px;
+}
+.panel label{
+  display:inline-block;
+  min-width: 110px;
+  text-align: right;
+}
+.msg{
+  color:#ff690b;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.admin-border{
+  max-width: 1000px;
+  max-height: 500px;
+  overflow: scroll;
+}
+.admin-border table *{
+  border:1.5px solid #012935;
+}
+.admin-border [data-width=m]{
+  max-width: 150px;
+}
+.admin-border [data-width=s]{
+  max-width: 60px;
+}
+
+/* 暖色调情景 */
+.cold{
+  background: rgba(1,41,53,0.05);
+}
+.warm{
+  background: rgba(255,105,11,0.05);
+}
+
+
+/* 开始footer部分 */
+footer{
+  color: #fff;
+}
+footer>*:first-child{  
+  max-width: 1000px;
+  margin: auto;
+}
+
+#copyright{
+  background: #fff;
+  color:#585858;
+  padding: 20px 0;
+  text-align: center;  
+}
+#copyright small{
+  font-size: 1.2em;
+}
+
+
+/* 商品名单的页码 */
+#page{
+  margin: 20px;
+  font-size: 1.5em;
+  display:flex;
+  justify-content: flex-start;
+}
+#page a{
+  width:15px;
+  height:20px;
+  display:inline-block;
+  margin:0 2px;
+  border:1px solid #012935;
+  color:#012935;
+  text-align: center;
+  text-decoration: none;
+}
+#page a.pageSelected{
+  background: #012935;
+  color:#fff;
+}
+
+
+
+@media only screen and (min-width:480px){
+  /* #header-btm进入三列 */
+  #header-btm ul{
+    width:465px;
+  }
+  
+}
+
+
+
+@media only screen and (min-width:640px){
+  /* #header-top是一个flex。#d-login在这里显示出来。 */
+  /*同时考虑no-js的情况*/
+  #header-top{
+    min-height:50px;    
+  }  
+  #header-top>*:first-child{
+    padding-left:20px;
+  }
+  #header-top p{
+    line-height: 50px;
+    font-size:1.6em;
+  }
+  #header-top a{
+    font-size:1.4em;
+  }
+  
+  .fas.fa-lock{
+    margin-right:5px;
+  }  
+  
+  /* 更换h1图片 */
+  h1>*:first-child{
+    width:600px;
+    height:auto;
+  }
+  /* #header-btm进入四列 */
+  #header-btm ul{
+    width:620px;
+  }
+
+  .panel{    
+    padding: 0 20px;
+  }
+  
+  
+  /* copyright进入整行 */
+  #copyright>*{
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-width:765px){ /*765以下#header-btm里的文字会变为两排*/
+  /* #header-btm改为横排显示。 */
+  #header-btm{
+    border-radius: 30px 0 0 30px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    padding-top: 0;
+    padding-left:10px;
+  }
+  #header-btm ul{    
+    width:100%;
+    height: 60px;
+    align-items: center;     
+  }
+  #header-btm li{ 
+    width: auto;    
+    margin:0;
+    border: none;
+    border-radius: 20px 0 0 20px;
+    line-height: 40px;    
+    padding: 0 20px;
+  }
+  #header-btm a{  
+    display:inline-block;
+    font-size: 1.8em;
+  }
+  #header-btm a:after{
+    content: '';    
+  } 
+  
+  /* 橘黄色h2的变化 */
+  #products>h2, #brands>h2, #shopping-cart>h2{    
+    margin: 0 0 20px 20px;    
+  } 
+}
+
+@media only screen and (min-width:1000px){
+  
+  #header-btm{
+    max-width:1000px;
+    margin:0 auto 20px;
+  }
+
+}
+
